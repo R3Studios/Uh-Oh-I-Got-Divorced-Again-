@@ -21,7 +21,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Uh Oh I Got Divorced Again!",
-    "description": "",
+    "description": "CONTENT WARNING! - This game contains gore, language, violence, and sexual themes ( Not that. ), So this game is recommended for people who are PG 13!\n\n\"You met a girl at a bar, you loved each other and started dating. You thought this would be the best times of your life, but then... you were wrong.\"\nThis is a 2D RPG Game where you play as Pierce, a Young Dutch Engineer, You meet Britney  a Young but Depressed Housewife.\n\nThis game was made for the Untitled Game Jam 100 by R3BB3L_GAMES.\n\nThis game was made in the 2D-3D Open-Source Game Engine GDevelop made by 4ian.",
     "author": "",
     "windowWidth": 1920,
     "windowHeight": 1080,
@@ -57,7 +57,7 @@
       "ios-icon-76": "",
       "ios-icon-80": "",
       "ios-icon-87": "",
-      "liluo-thumbnail": ""
+      "liluo-thumbnail": "Untitled design (2).png"
     },
     "loadingScreen": {
       "backgroundColor": 0,
@@ -85,8 +85,14 @@
     "authorUsernames": [
       "REBBEL_GAMES"
     ],
-    "categories": [],
-    "playableDevices": [],
+    "categories": [
+      "story-rich",
+      "horror",
+      "rpg"
+    ],
+    "playableDevices": [
+      "keyboard"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -6293,6 +6299,15 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "DesktopIcon512",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Untitled design (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Untitled design (2).png",
         "smoothed": false,
         "userAdded": false
       }
@@ -21451,7 +21466,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.20746499616301353,
+        "zoomFactor": 0.3526904934771229,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -21572,7 +21587,7 @@
           "persistentUuid": "8167a3f6-c3bf-4f47-9620-82c392242a60",
           "width": 0,
           "x": 306,
-          "y": 965,
+          "y": 920,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -21915,7 +21930,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Press E to proceed with the selected action.",
+          "string": "Press E to proceed with the selected action.\n( Use Arrow Keys to Navigate )",
           "font": "ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
           "textAlignment": "center",
           "characterSize": 40,
@@ -21938,7 +21953,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Press E to proceed with the selected action.",
+            "text": "Press E to proceed with the selected action.\n( Use Arrow Keys to Navigate )",
             "font": "ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -33005,7 +33020,17 @@
                 "value": "Wait"
               },
               "parameters": [
-                "3"
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Finale\"",
+                ""
               ]
             }
           ]
@@ -43251,8 +43276,8 @@
           "name": "NewSprite",
           "persistentUuid": "dfee8873-6025-4a3c-80fe-649e99532b56",
           "width": 73,
-          "x": 132,
-          "y": 830,
+          "x": 101,
+          "y": 846,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -45541,6 +45566,35 @@
               "parameters": [
                 "",
                 "\"Jumpscare\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "NewSprite",
+                "NewTiledSprite2",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"HouseIn\"",
                 ""
               ]
             }
@@ -54866,6 +54920,35 @@
                     "501"
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "NewSprite",
+                "NewSprite14",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue2\"",
+                ""
               ]
             }
           ]
